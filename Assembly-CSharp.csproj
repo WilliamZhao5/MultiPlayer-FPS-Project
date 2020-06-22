@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5E62C16B-0C08-E8F2-FE78-9D9C3FA5E984}</ProjectGuid>
+    <ProjectGuid>{ABDCB4E5-55BF-2B87-449E-4D27FF04EB1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,32 +65,43 @@
   <ItemGroup>
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\PlayerMotor.cs" />
+    <Compile Include="Assets\PlayerScript.cs" />
+    <Compile Include="Assets\PlayerSetup.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>/Users/yuzhao/Desktop/AR Projects/First_FPS_Game_Project/MultiPlayer-FPS-Project/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Users/yuzhao/Downloads/2019.2.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
