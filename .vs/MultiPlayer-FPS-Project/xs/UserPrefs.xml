@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{ABDCB4E5-55BF-2B87-449E-4D27FF04EB1C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerSetup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/PlayerController.cs" Line="26" Column="56" />
-      <File FileName="Assets/PlayerMotor.cs" Line="64" Column="2" />
-      <File FileName="Assets/PlayerSetup.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMotor.cs" Line="8" Column="21" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MultiPlayer-FPS-Project" expanded="True">
-            <Node name="Assets" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -17,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8dc3e9d8-25a4-4a91-94b2-d0bbb69eab76" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="43f07d8e-b95d-4318-95d8-79a1a41b2963" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

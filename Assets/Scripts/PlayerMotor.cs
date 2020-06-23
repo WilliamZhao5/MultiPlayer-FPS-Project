@@ -8,10 +8,15 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     private Camera cam;
 
+    [SerializeField]
+    private float cameraRotationLimits = 85f;
+
     private Vector3 velocity = Vector3.zero;
     private Rigidbody rb;
     private Vector3 rotation = Vector3.zero;
-    private Vector3 cameraRotation = Vector3.zero;
+    private float cameraRotationX = 0f;
+    private float currentCameraRotationX = 0f;
+    private Vector3 thrusterForce = Vector3.zero;
 
     void Start()
     {
@@ -31,34 +36,51 @@ public class PlayerMotor : MonoBehaviour
     }
 
     //get the cameraRotation from PlayController
-    public void RotateCamera(Vector3 _cameraRotation)
+    public void RotateCamera(float _cameraRotationX)
     {
-        cameraRotation = _cameraRotation;
+        cameraRotationX = _cameraRotationX;
+    }
+
+    //get the thruster force from PlayerController
+    public void ApplyThruster(Vector3 _thrusterForce)
+    {
+        thrusterForce = _thrusterForce;
     }
 
     void FixedUpdate()
     {
         MovePerformance();
         RotatePerformance();
+        
     }
 
     //Move the position of the Player based on the velocity
+    //Add an upward force for the Player to jump based on the thruster force
     private void MovePerformance()
     {
         if (velocity != Vector3.zero)
         {
             rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
         }
+
+        if (thrusterForce != Vector3.zero)
+        {
+            rb.AddForce(thrusterForce * Time.deltaTime, ForceMode.Acceleration);
+        }
     }
 
     //Rotate the Player based on the rotation
-    private void RotatePerformance()
+    void RotatePerformance()
     {
         rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
         if (cam != null)
         {
-            cam.transform.Rotate(-cameraRotation);
+            //set the rotation and clamp it
+            currentCameraRotationX -= cameraRotationX;
+            currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -cameraRotationLimits, cameraRotationLimits);
+
+            //apply the rotation to the Player's camera
+            cam.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
         }
     }
-
 }
