@@ -2,20 +2,24 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerController.cs">
     <Files>
       <File FileName="Assets/PlayerController.cs" Line="9" Column="30" />
-      <File FileName="Assets/PlayerMotor.cs" Line="62" Column="6" />
-      <File FileName="Assets/PlayerSetup.cs" Line="33" Column="6" />
+      <File FileName="Assets/PlayerMotor.cs" />
+      <File FileName="Assets/PlayerSetup.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MultiPlayer-FPS-Project" expanded="True" selected="True" />
+          <Node name="MultiPlayer-FPS-Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="PlayerController.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d2f6890-791b-42e1-adbe-519372492f63" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8dc3e9d8-25a4-4a91-94b2-d0bbb69eab76" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
