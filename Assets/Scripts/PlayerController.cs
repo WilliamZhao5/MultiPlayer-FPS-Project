@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         motor = GetComponent<PlayerMotor>();
         joint = GetComponent<ConfigurableJoint>();
-        setJontSettings(jointSpring);
+        setJointSettings(jointSpring);
     }
 
     void Update()
@@ -59,15 +59,15 @@ public class PlayerController : MonoBehaviour
         motor.RotateCamera(cameraRotationX);
 
         //calculate the thruster force as a Vector3
-        //set the JointSpring to zero if the Player is jumping
+        //set the JointSpring to zero if the Player is jumping so the Player can keep lifting
         Vector3 _thrusterForce = Vector3.zero;
         if (Input.GetButton("Jump"))
         {
             _thrusterForce = Vector3.up * thrusterForce;
-            setJontSettings(0f);
+            setJointSettings(0f);
         } else
         {
-            setJontSettings(jointSpring);
+            setJointSettings(jointSpring);
         }
 
         //apply the thruster force
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //set the Congigurable Joint settings using the parameters
-    private void setJontSettings(float _jointSpring)
+    private void setJointSettings(float _jointSpring)
     {
         //here is a special syntax
         joint.yDrive = new JointDrive { positionSpring = _jointSpring

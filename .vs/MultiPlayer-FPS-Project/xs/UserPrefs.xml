@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{ABDCB4E5-55BF-2B87-449E-4D27FF04EB1C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerSetup.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMotor.cs" Line="8" Column="21" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMotor.cs" Line="67" Column="81" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="86" Column="6" />
+      <File FileName="Assets/PlayerShooting.cs" Line="38" Column="31" />
+      <File FileName="Assets/PlayerWeapon.cs" Line="8" Column="31" />
+      <File FileName="Assets/Scripts/PlayerSetup.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +13,7 @@
           <Node name="MultiPlayer-FPS-Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+                <Node name="PlayerSetup.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -20,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="43f07d8e-b95d-4318-95d8-79a1a41b2963" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a242ff40-8c56-42a4-8811-05a19c9b456f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

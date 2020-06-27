@@ -51,7 +51,6 @@ public class PlayerMotor : MonoBehaviour
     {
         MovePerformance();
         RotatePerformance();
-        
     }
 
     //Move the position of the Player based on the velocity
@@ -75,7 +74,7 @@ public class PlayerMotor : MonoBehaviour
         rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
         if (cam != null)
         {
-            //set the rotation and clamp it
+            //set the rotation and clamp it in the range of the limits
             currentCameraRotationX -= cameraRotationX;
             currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -cameraRotationLimits, cameraRotationLimits);
 
