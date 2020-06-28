@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameManager
+    - Player
     - PlayerController
     - PlayerMotor
     - PlayerSetup
@@ -57,19 +59,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9950}
     - Class: 114
-      Script: {instanceID: 10552}
+      Script: {instanceID: 10236}
     - Class: 114
-      Script: {instanceID: 10616}
+      Script: {instanceID: 10554}
     - Class: 114
-      Script: {instanceID: 10844}
+      Script: {instanceID: 10618}
     - Class: 114
-      Script: {instanceID: 10990}
+      Script: {instanceID: 10846}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 10992}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 11566}
+    - Class: 114
+      Script: {instanceID: 13490}
+    - Class: 114
+      Script: {instanceID: 13496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -267,6 +273,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 8cc8998fc570a76e13419952e9119839
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerShooting
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -611,10 +623,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 6f71e653f97f781051c20f7c6c5e47ea
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerShooting
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 6f0d88143c301abdc3147ebdcf740f7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

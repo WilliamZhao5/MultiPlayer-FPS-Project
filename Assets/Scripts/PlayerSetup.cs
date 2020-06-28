@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof (Player))]
 public class PlayerSetup : NetworkBehaviour
 {
     [SerializeField]
@@ -30,15 +31,16 @@ public class PlayerSetup : NetworkBehaviour
 
             }
         }
-
-        RegisterPlayer();
     }
 
-    //register the Player so that each player has a unique ID and name
-    void RegisterPlayer()
+    public override void OnStartClient()
     {
-        playerID = "Player " + GetComponent<NetworkIdentity>().netId;
-        transform.name = playerID;
+        base.OnStartClient();
+
+        string netID = GetComponent<NetworkIdentity>().netId.ToString();
+        Player player = GetComponent<Player>();
+
+        GameManager.RegisterPlayer(netID, player);
     }
 
     //assign remote layer to the non-local Player
@@ -63,5 +65,7 @@ public class PlayerSetup : NetworkBehaviour
             sceneCamera.gameObject.SetActive(true);
 
         }
+
+        GameManager.DisconnectPlayer(transform.name);
     }
 }
