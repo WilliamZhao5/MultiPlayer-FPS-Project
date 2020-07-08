@@ -292,6 +292,7 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerMotor.cs"
 "Assets/Scripts/PlayerScript.cs"

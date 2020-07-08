@@ -47,12 +47,13 @@ public class PlayerShooting : NetworkBehaviour
     }
 
     //show which player has been shot
+    //make the player who has been shot takes damage
     [Command]
     void CmdPlayerShot (string playerID, int damage)
     {
         Debug.Log(playerID + " has been shot by " + gameObject.transform.name);
 
         Player player = GameManager.getPlayer(playerID);
-        player.TakeDamage(damage);
+        player.RpcTakeDamage(damage);
     } 
 }

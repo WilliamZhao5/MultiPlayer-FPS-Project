@@ -333,10 +333,10 @@ GameObject:
   - component: {fileID: 5275068479425125276}
   - component: {fileID: 5275068479425125277}
   - component: {fileID: 5275068479425125278}
+  - component: {fileID: 5275068479425125274}
   - component: {fileID: 5275068479425125279}
   - component: {fileID: 5275068479425125272}
   - component: {fileID: 5275068479425125273}
-  - component: {fileID: 5275068479425125274}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -487,12 +487,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon:
     name: Gun0
-    damage: 10
+    damage: 40
     range: 100
   cam: {fileID: 5275068479295639175}
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 567
+--- !u!114 &5275068479425125274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275068479425125275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db40ca49b0aea4094a10ddb98600cc5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  disableOnDeath:
+  - {fileID: 5275068479425125219}
+  - {fileID: 5275068479425125278}
 --- !u!114 &5275068479425125279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,18 +646,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &5275068479425125274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5275068479425125275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db40ca49b0aea4094a10ddb98600cc5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5275068479658249181
 GameObject:
   m_ObjectHideFlags: 0
